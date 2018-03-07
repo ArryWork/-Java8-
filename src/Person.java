@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Arry on 2017/8/30.
  */
@@ -37,5 +40,20 @@ public class Person {
 
     public void setSex(int sex) {
         this.sex = sex;
+    }
+
+    public static void main(String[] args) {
+        Integer t1 = 128;
+        Integer t2 = 128;
+        System.out.println(t1==t2);
+
+        Integer t3 = 127;
+        Integer t4 = 127;
+        System.out.println(t3==t4);
+
+        Integer t5 = new Integer(127);
+        Integer t6 = new Integer(127);
+        System.out.println(t5==t6);
+        System.out.println(t3==t5);
     }
 }
